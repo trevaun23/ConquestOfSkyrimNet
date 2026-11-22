@@ -4,6 +4,8 @@ Found your own faction in Skyrim, rule its holds, lead its armies and run its tr
 people**. Conquest of SkyrimNet builds on Conquest of Skyrim and adds a government you speak to through
 [SkyrimNet](https://github.com/MinLL/SkyrimNet-GamePlugin), along with a PrismaUI faction screen, requests from your
 people, unrest and uprisings, army morale, deserters, bribery and coups, and settlements you build yourself.
+
+THIS WAS MADE USING THE ORIGINAL CODE OF [CONQUEST OF SKYRIM](https://www.nexusmods.com/skyrimspecialedition/mods/65628), AUTHORED BY **GALVATRON530**.
  
 > **New here?** Skip down to [What to say, and to whom](#what-to-say-and-to-whom). You don't need exact
 > wording: say what you mean in your own words. The NPC decides whether to act, and anything that costs gold or
@@ -13,12 +15,18 @@ people, unrest and uprisings, army morale, deserters, bribery and coups, and set
  
 ## Requirements
  
-| Required | Optional |
+| Required | Link |
 |---|---|
-| Skyrim SE/AE with SKSE | **SkyrimNet**: conversation, knowledge and memories (strongly recommended, and this guide assumes it) |
-| PapyrusUtil | **Physical Letters**: requests reach you as letters by courier |
-| SkyUI + MCM Helper | |
-| PrismaUI | |
+| Skyrim SE/AE with SKSE64 | [skse.silverlock.org](https://skse.silverlock.org/) |
+| PapyrusUtil | [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/13048) |
+| SkyUI + MCM Helper | [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604) · [MCM Helper](https://www.nexusmods.com/skyrimspecialedition/mods/53000) |
+| **PrismaUI**: the faction screen | [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/148718) |
+| **SkyrimNet**: Conversation, knowledge and memories | [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/198346) |
+ 
+| Optional / recommended | Link | What it adds |
+|---|---|---|
+| **Physical Letters** | [GitHub](https://github.com/zevck/Physical-Letters) | Requests reach you as letters by courier. |
+| **SeverActions** (recommended) | [GitHub](https://github.com/Severause/SeverActions) | More SkyrimNet actions, so NPCs can follow you, travel, craft, change outfits, make arrests and fight. It pairs well with the faction's officers and soldiers. |
  
 Conquest of SkyrimNet **replaces** Conquest of Skyrim (`conquerskyrim.esp`), so remove that first.
  
@@ -28,17 +36,72 @@ Conquest of SkyrimNet **replaces** Conquest of Skyrim (`conquerskyrim.esp`), so 
 2. In the installer, keep **SkyrimNet knowledge** ticked if you use SkyrimNet.
 3. Start a new game, or continue a save made with an earlier version of Conquest of SkyrimNet.
 4. Read the **Start my Faction** book to pick your faction's name, army prefix and banner.
-5. Go to MCM > Conquest of SkyrimNet > General and bind **Faction menu**. It's unbound by default (We recommend "8").
+5. Go to MCM > Conquest of SkyrimNet > General and bind **Faction menu**. It's unbound by default.
 ## Your first hour
  
-1. **Found your faction** with the book "Start your faction" which is in your inventory.
-2. **Take a hold.** Claim a couple areas - bandit camps, fosworn camps, giant strongholds. POSSIBLE CLAIMS: https://cdn.discordapp.com/attachments/1029345910863429662/1168911502531637338/Untitled352_20230723121708.png?ex=6b02f4ab&is=6b01a32b&hm=1095e83bc6b71c226b4f7687f7795a64d457bdfeeee797a5b67d542ef67c4d61& 
+1. **Found your faction** with the book.
+2. **Take a claim.** Clear a bandit camp, a mine or a fort and plant your banner (see [Taking claims](#taking-claims)).
 3. **Appoint a Steward.** Ask a friendly NPC: *"I need someone to run my treasury. Will you be my Steward?"*
 4. **Appoint a General**, and a **Captain** for your first army.
 5. **Open the faction screen** with your hotkey. It shows your treasury, supplies, lands, armies and requests.
 6. From then on, run the realm by talking to the people who serve you.
+
+<img width="1641" height="924" alt="image" src="https://github.com/user-attachments/assets/71ea9a06-f186-40b8-b82a-fb52fef42b8e" />
+
 ---
+
+## Core features
  
+**Conquer Skyrim.** Start with a single bandit camp and end up ruling Skyrim. Take any of 87 claims, then forts,
+roads and whole holds, and storm cities against the Imperials and the Stormcloaks. Plan sieges at the war camp,
+bring rams, ladders and catapults, and give the order to attack. If you'd rather pay than fight, a jarl at peace
+with you may sell you their city or fort.
+ 
+**Build your own settlements.** Plant a banner on open land and build a village from Skyrim and Hearthfire pieces:
+homes, fields, mills, smithies, an inn, walls and watchtowers. Settlers move in, take the jobs, and send food, wood,
+metal and gold home. Each settlement gets its own map marker for fast travel. Strong walls keep raiders out.
+ 
+**Rule through conversation.** Appoint a Steward, a General, a Blacksmith, captains and jarls from the people you
+meet, then give them orders out loud. "Lower the taxes in Riverwood." "Send Army 2 to attack Fort Greymoor."
+"Recruit ten archers." With SkyrimNet, they know the real numbers, remember what you did, and talk back.
+ 
+**Command armies that have feelings.** Every army has morale. Unpaid wages, empty bellies, long campaigns and
+refused requests wear it down. Stars, victories and listening to your commanders lift it back up. Push an army too
+far and it **deserts**: it becomes a free company that holds your fort, raids your stores and tempts other armies to
+join it. You can crush them, pay them off or recognise their realm.
+ 
+**Keep your people loyal, or face uprisings.** Hunger, heavy taxes, no garrison and ignored court cases make towns
+restless. Unrest turns into an **uprising**: armed townsfolk take the town, stop paying taxes, and eventually open
+the gates to your enemies. You can meet their demands, kill their leader or march in a garrison. Each choice has a
+cost.
+ 
+**Rebels fight back.** Risen towns and free companies take their own turn in the war. Every day, when the economy
+updates, they may storm one of your cities in a full Conquest of Skyrim battle. You can defend it yourself or trust
+your garrison.
+ 
+**Topple jarls from within.** In enemy cities, bribe the guards, fund the nobles and win over the citizens, either
+in person or through your Steward's agents. When support is high enough, launch a **coup**. Torch-bearing crowds
+gather, you confront the jarl, and the guards decide whose side they're on.
+ 
+**Hear from your people.** Towns, officers and commanders send you requests: festivals, tax relief, trade, upgrades,
+or a famous army to guard their walls. With Physical Letters they arrive by courier. Your answers change loyalty
+and morale.
+ 
+**Run an economy.** Gold, food, metal and wood come from your towns, mines, farms and settlements. Set taxes,
+trade with your towns and rival factions, upgrade barracks, farms, mills and mines, and buy supplies straight from
+farmers, miners and lumberjacks.
+ 
+**Shape your faction.** Choose your faction's name, banner, uniforms and troop mix. Write its culture and military
+doctrine, and pick how it's led: laissez-faire, democratic or an iron-fisted dictatorship. Everyone in Skyrim
+learns who you are.
+ 
+**Follow it all in your journal.** Unrest, uprisings, deserters and coups each get a quest with stages and map
+markers. The faction screen shows everything else at a glance.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08ff4f9b-23a5-4803-bc4b-5e86a8c7913d" />
+
+<img width="1649" height="921" alt="image" src="https://github.com/user-attachments/assets/e5987808-26ea-42a4-95c1-dad4e5d5a9c3" />
+--
+
 ## What to say, and to whom
  
 The lines below are only **examples**. SkyrimNet understands what you mean, so phrase things however you like.
@@ -100,6 +163,7 @@ Steward can do them for any town.
 | Name an army | "Name Army 2 the Iron Wolves, sworn to free the Reach." |
 | Put down deserters | "Send the Iron Wolves against the deserters at Fort Sungard." |
 | Found or build a settlement | "Found a settlement here." · "Open the build menu." |
+<img width="1648" height="925" alt="image" src="https://github.com/user-attachments/assets/4e1f821b-c6e3-488f-b66b-c5f9249a3ec0" />
  
 ### Captains and Commanders (your own army)
  
@@ -149,6 +213,7 @@ Captains and Commanders know their army's morale and what's behind it, so ask th
  
 Farm households (such as the Battle-Borns) and people who buy wheat for favours sell **food**. Miners and mine
 owners sell **metal**, and mill and lumber workers sell **wood**. Merchants sell all three.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2b6bb744-1536-4830-b408-b8947e410ae9" />
  
 ### Guards, nobles and citizens of enemy cities (intrigue)
  
@@ -158,13 +223,16 @@ owners sell **metal**, and mill and lumber workers sell **wood**. Merchants sell
 | Fund a noble, merchant or citizen | "Here's gold for you and your friends. Your jarl doesn't deserve you." |
 | Persuade them (free, once a day each) | "Your jarl is bleeding this city dry. You know it." |
 | Launch the coup (once support is 40+) | "It's time. Help me take the jarl down." |
- 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/99d3500d-40d8-4dbd-801e-f585ef5a2bf3" />
+
 ### Rebels and deserters
  
 | Who | Say something like… |
 |---|---|
 | A **rebel leader** (or the town's jarl/steward) | "I hear you. You'll have gold, food and lower taxes. Lay down your arms." |
 | A **free company** leader | "I'll pay your arrears. Swear back in." · "Keep what you hold. I'll recognise your realm." |
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/20003fee-5e50-4276-aa4e-478cb03c514f" />
  
 ### Someone who sent you a request
  
@@ -182,7 +250,29 @@ Letters. Answer them on the tab or face to face:
 | Ask how it's going | "How is the settlement doing? Are we safe from raids?" |
  
 ---
+
+## Taking claims
  
+A **claim** is a small holding of your own outside the towns, such as a bandit camp, a cave, a tower, a mine or a
+farm. Claims are how a new faction gets started. Each one you hold opens another **army slot** for a Captain,
+and the first one becomes your base of operations.
+ 
+1. **Find a claimable place.** The [appendix](#appendix-every-claim) lists all 87.
+2. **Clear it.** Kill every enemy there: bandits, Forsworn, necromancers, warlocks, giants, Thalmor and bears.
+   If anyone is left, you're told how many.
+3. **Plant your banner.** Stand in the place itself, where its name shows when you arrive (outside, for farms and
+   forts), and use the **Place Banner** power.
+   Your faction's banner goes up, and the claim appears on the faction screen (Lands tab > Claims).
+4. **Manage it.** Activate the banner to open the holding menu:
+   - **Hire guard** (250 gold, 1 food a day, up to 5): defends the claim.
+   - **Hire miner** (mines only; 400 gold, 1 food a day, up to 5): +2 metal a day each.
+   - **Hire farmhand** (farms only; 400 gold, up to 5): +2 food a day each (each grows 3 and eats 1).
+   - **Set as base of operations**: your officers gather here.
+Notes:
+- Prices follow MCM > Economy.
+- You can hold up to 62 claims at once.
+- Army slots stop at 30.
+- Each claim's army slot shows on the Officers tab. Pick a Captain there, or ask someone in conversation.
 ## The faction screen (hotkey)
  
 The screen reopens on the last tab you used. It always has **Overview, Requests, Officers, Armies, Lands, Unrest,
@@ -212,8 +302,107 @@ Settlements, Culture** and **Settings**. Some tabs appear only when you open the
 The full in-game guide is in `Docs/ConquestOfSkyrimNet/UserGuide.md`. The changes in each version are listed in
 `CHANGELOG.md`.
  
+## Appendix: every claim
+ 
+**Hideouts** take guards. **Mines** take guards and miners (metal). **Farms** take guards and farmhands (food).
+Claims marked *(new)* were added by Conquest of SkyrimNet.
+ 
+| Hold | Claim | Type |
+|---|---|---|
+| Haafingar | Broken Oar Grotto | Hideout |
+| Haafingar | Ironback Hideout | Hideout |
+| Haafingar | Northwatch Keep *(new)* | Hideout |
+| Haafingar | Orphan's Tear | Hideout |
+| Haafingar | Pinemoon Cave | Hideout |
+| Hjaalmarch | Eldersblood Peak | Hideout |
+| Hjaalmarch | Movarth's Lair | Hideout |
+| Hjaalmarch | Orotheim | Hideout |
+| Hjaalmarch | Robber's Gorge | Hideout |
+| Hjaalmarch | Skyborn Altar | Hideout |
+| Hjaalmarch | Stonehill Bluff | Hideout |
+| Hjaalmarch | Talking Stone Camp | Hideout |
+| The Pale | Blizzard Rest | Hideout |
+| The Pale | Red Road Pass | Hideout |
+| The Pale | Shearpoint | Hideout |
+| The Pale | Tumble Arch Pass | Hideout |
+| Winterhold | Fort Fellhammer | Mine |
+| Winterhold | Hob's Fall Cave | Hideout |
+| Winterhold | Mount Anthor | Hideout |
+| Winterhold | Snowpoint Beacon | Hideout |
+| Winterhold | The Pride of Tel Vos | Hideout |
+| Winterhold | Winter War | Hideout |
+| The Reach | Broken Tower Redoubt | Hideout |
+| The Reach | Bruca's Leap Redoubt | Hideout |
+| The Reach | Dragon Bridge Overlook | Hideout |
+| The Reach | Dragontooth Crater | Hideout |
+| The Reach | Druadach Redoubt | Hideout |
+| The Reach | Four Skull Lookout | Hideout |
+| The Reach | Hag Rock Redoubt | Hideout |
+| The Reach | Karthspire | Hideout |
+| The Reach | Kolskeggr Mine | Mine |
+| The Reach | Red Eagle Redoubt | Hideout |
+| Whiterun | Bleakwind Basin | Hideout |
+| Whiterun | Broken Fang Cave | Hideout |
+| Whiterun | Fellglow Keep | Hideout |
+| Whiterun | Graywinter Watch | Hideout |
+| Whiterun | Guldun Rock | Hideout |
+| Whiterun | Halted Stream Camp | Mine |
+| Whiterun | Redoran's Retreat | Hideout |
+| Whiterun | Serpent's Bluff Redoubt | Hideout |
+| Whiterun | Silent Moons Camp | Hideout |
+| Whiterun | Sleeping Tree Camp | Hideout |
+| Whiterun | Swindler's Den | Hideout |
+| Whiterun | Valtheim Keep | Hideout |
+| Whiterun | White River Watch | Hideout |
+| Eastmarch | Bonestrewn Crest | Hideout |
+| Eastmarch | Broken Limb Camp | Hideout |
+| Eastmarch | Cradlecrush Rock | Hideout |
+| Eastmarch | Cragslane Cavern | Hideout |
+| Eastmarch | Cragwallow Slope | Hideout |
+| Eastmarch | Lost Knife Hideout | Hideout |
+| Eastmarch | Mara's Eye Pond | Hideout |
+| Eastmarch | Mistwatch | Hideout |
+| Eastmarch | Morvunskar | Hideout |
+| Eastmarch | Steamcrag Camp | Hideout |
+| Eastmarch | Stony Creek Cave | Hideout |
+| Eastmarch | Traitor's Post | Hideout |
+| Eastmarch | Uttering Hills Camp | Hideout |
+| Falkreath | Ancient's Ascent | Hideout |
+| Falkreath | Bannermist Tower | Hideout |
+| Falkreath | Bilegulch Mine | Mine |
+| Falkreath | Bloodlet Throne | Hideout |
+| Falkreath | Cracked Tusk Keep | Hideout |
+| Falkreath | Embershard | Mine |
+| Falkreath | Falkreath Watchtower | Hideout |
+| Falkreath | Helgen | Hideout |
+| Falkreath | Knifepoint Ridge | Mine |
+| Falkreath | Secunda's Shelf | Hideout |
+| Falkreath | Shriekwind Bastion | Hideout |
+| The Rift | Alchemist's Shack *(new)* | Hideout |
+| The Rift | Autumnwatch Tower | Hideout |
+| The Rift | Boulderfall Cave | Hideout |
+| The Rift | Broken Helm Hollow | Hideout |
+| The Rift | Bthalft | Hideout |
+| The Rift | Darklight Tower | Hideout |
+| The Rift | Faldar's Tooth | Hideout |
+| The Rift | Honeystrand Cave *(new)* | Hideout |
+| The Rift | Lost Prospect Mine *(new)* | Mine |
+| The Rift | Lost Tongue Overlook | Hideout |
+| The Rift | Nilheim | Hideout |
+| The Rift | Northwind Mine *(new)* | Mine |
+| The Rift | Northwind Summit | Hideout |
+| The Rift | Redwater Den | Hideout |
+| The Rift | Rift Watchtower | Hideout |
+| The Rift | Sarethi Farm *(new)* | Farm |
+| The Rift | Treva's Watch | Hideout |
+| Solstheim | Fort Frostmoth *(new)* | Hideout |
+ 
 ## Credits
  
-Built on **Conquest of Skyrim**. Conversation through **SkyrimNet**. Menus by **PrismaUI**. Letters by
-**Physical Letters**.
+Built on **Conquest of Skyrim**. Conversation through [SkyrimNet](https://github.com/MinLL/SkyrimNet-GamePlugin). Menus by
+[PrismaUI](https://www.nexusmods.com/skyrimspecialedition/mods/148718). Letters by [Physical Letters](https://github.com/zevck/Physical-Letters).
+Recommended companion: [SeverActions](https://github.com/Severause/SeverActions).
+
+<img width="1645" height="922" alt="image" src="https://github.com/user-attachments/assets/339d7b3b-b720-4c63-bb9a-7b0a07b0d911" />
+
  
