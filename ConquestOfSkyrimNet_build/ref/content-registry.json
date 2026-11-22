@@ -1,0 +1,209 @@
+{
+  "items": {
+    "actions/aggressively_comply.yaml": "enabled"
+  },
+  "pins": {},
+  "plugins": {
+    "adventurersguild.skyrimnet": {
+      "enabled": true,
+      "source": "external"
+    },
+    "cleanestpoison.agencyengine": {
+      "enabled": true,
+      "source": "external"
+    },
+    "coronerra.odeadly": {
+      "enabled": true,
+      "source": "external"
+    },
+    "deadohiosky48.kinship": {
+      "enabled": true,
+      "source": "external"
+    },
+    "deadohiosky48.relationships": {
+      "enabled": true,
+      "source": "external"
+    },
+    "galanx.intelengine": {
+      "enabled": true,
+      "source": "external"
+    },
+    "goodprovider.injuryengine": {
+      "enabled": true,
+      "source": "external"
+    },
+    "jykej.intellite": {
+      "enabled": true,
+      "source": "external"
+    },
+    "jykej.revenge-and-respawn": {
+      "enabled": true,
+      "source": "external"
+    },
+    "local.iou-ledger": {
+      "enabled": true,
+      "source": "external"
+    },
+    "local.political-letters": {
+      "enabled": true,
+      "source": "external"
+    },
+    "local.skyrimnet-brothel": {
+      "enabled": true,
+      "source": "external"
+    },
+    "local.skyrimnet-minigame": {
+      "enabled": true,
+      "source": "external"
+    },
+    "local.skyrimnet-slaveauction": {
+      "enabled": true,
+      "source": "external"
+    },
+    "local.skyrimnet-slaveauction-entrysack": {
+      "enabled": true,
+      "source": "external"
+    },
+    "nosimo.and_awareness": {
+      "enabled": true,
+      "source": "external"
+    },
+    "oldcustard.bioforge": {
+      "enabled": true,
+      "source": "external"
+    },
+    "pdusen.narrative-engine": {
+      "enabled": true,
+      "source": "external"
+    },
+    "phospheneoverdrive.iactions": {
+      "enabled": true,
+      "source": "external"
+    },
+    "regalrascal.baka-gs-integration": {
+      "enabled": true,
+      "source": "external"
+    },
+    "regalrascal.gs-poses": {
+      "enabled": true,
+      "source": "external"
+    },
+    "severause.severactions": {
+      "enabled": true,
+      "source": "external"
+    },
+    "skyrimnet.bios-cutting-room-floor": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "skyrimnet.bios-harem-2-aio-armored": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "skyrimnet.bios-harem-volume-3": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "skyrimnet.bios-immersive-wenches": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "skyrimnet.bios-legacyofthedragonborn": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "skyrimnet.bios-milfactory-hasara": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "skyrimnet.bios-miri-follower": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "skyrimnet.bios-trustyhpfollowerpack": {
+      "enabled": true,
+      "enabled_explicit": true,
+      "source": "hub"
+    },
+    "telord.simplebleedoutko": {
+      "enabled": true,
+      "source": "external"
+    },
+    "telord72612.bathing-in-skyrim-renewed-integration-for-skyrimnet": {
+      "enabled": true,
+      "source": "external"
+    },
+    "tetherball88.ostimnavigator": {
+      "enabled": true,
+      "source": "external"
+    },
+    "tetherball88.ostimnet": {
+      "enabled": true,
+      "source": "external"
+    },
+    "urtubesrclogged.battle-summaries": {
+      "enabled": true,
+      "source": "external"
+    },
+    "whyregister.hours-well-spent": {
+      "enabled": true,
+      "source": "external"
+    },
+    "whyregister.to-the-yield": {
+      "enabled": true,
+      "source": "external"
+    },
+    "zevick.physical-letters": {
+      "enabled": true,
+      "source": "external"
+    }
+  },
+  "priority": [
+    "deadohiosky48.relationships",
+    "deadohiosky48.kinship",
+    "local.political-letters",
+    "coronerra.odeadly",
+    "local.skyrimnet-slaveauction-entrysack",
+    "local.skyrimnet-slaveauction",
+    "local.skyrimnet-brothel",
+    "local.iou-ledger",
+    "galanx.intelengine",
+    "regalrascal.gs-poses",
+    "regalrascal.baka-gs-integration",
+    "telord.simplebleedoutko",
+    "goodprovider.injuryengine",
+    "oldcustard.bioforge",
+    "skyrimnet.bios-trustyhpfollowerpack",
+    "skyrimnet.bios-miri-follower",
+    "skyrimnet.bios-milfactory-hasara",
+    "skyrimnet.bios-legacyofthedragonborn",
+    "skyrimnet.bios-immersive-wenches",
+    "skyrimnet.bios-harem-2-aio-armored",
+    "skyrimnet.bios-harem-volume-3",
+    "skyrimnet.bios-cutting-room-floor",
+    "telord72612.bathing-in-skyrim-renewed-integration-for-skyrimnet",
+    "adventurersguild.skyrimnet",
+    "zevick.physical-letters",
+    "whyregister.to-the-yield",
+    "whyregister.hours-well-spent",
+    "urtubesrclogged.battle-summaries",
+    "tetherball88.ostimnet",
+    "tetherball88.ostimnavigator",
+    "severause.severactions",
+    "phospheneoverdrive.iactions",
+    "pdusen.narrative-engine",
+    "nosimo.and_awareness",
+    "local.skyrimnet-minigame",
+    "jykej.revenge-and-respawn",
+    "jykej.intellite",
+    "cleanestpoison.agencyengine"
+  ],
+  "schema_version": 1
+}

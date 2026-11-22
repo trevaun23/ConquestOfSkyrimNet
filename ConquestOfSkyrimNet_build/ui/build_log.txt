@@ -1,0 +1,12 @@
+=== Sat 11/21/2026 18:58:09.32 ===
+SRC=C:\Users\treva\Downloads\Conquest of Skyrim 0.3.9\ConquestOfSkyrimNet_build\ui\
+WORK=C:\Users\treva\ffbuild
+VSPATH=C:\Program Files\Microsoft Visual Studio\18\Community
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.12.1
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\cmd\git.exe
+git version 2.56.1.windows.1
+
+UI plugin source unchanged since the last build - keeping ConquestOfSkyrimNetUI_DLL.zip

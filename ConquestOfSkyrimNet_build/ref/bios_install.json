@@ -1,0 +1,9 @@
+{
+  "commit": "140c808e229dc217fc042f424faf04b3ed967594",
+  "files": {
+    "manifest.json": "91fb1c6766407217ed0c681c9a5310327fffc6cb",
+    "prompts/characters/miri_generic.prompt": "8a606d8cd72e0624055b7184fcdf53bf53d305dc"
+  },
+  "installed_at": "2026-11-04T05:52:28Z",
+  "source": "hub"
+}

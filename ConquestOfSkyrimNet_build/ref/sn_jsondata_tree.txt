@@ -1,0 +1,9 @@
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\descriptions
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\heightRanges.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\tngAddons.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\descriptions\3ba.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\descriptions\bhunp.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\descriptions\Example_3ba_manual.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\descriptions\himbo.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\jsonData\descriptions\__folder_managed_by_vortex

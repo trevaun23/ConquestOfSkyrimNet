@@ -1,0 +1,26 @@
+## {{ decnpc(npc.UUID).name }} Bio
+- Gender: {{ decnpc(npc.UUID).gender }}
+- Race: {{ decnpc(npc.UUID).race }}
+## Background
+{% block background %}{% endblock %}
+
+## Personality
+{% block personality %}{% endblock %}
+
+## Appearance
+{% block appearance %}{% endblock %}
+
+## Aspirations
+{% block aspirations %}{% endblock %}
+
+## Relationships
+{% block relationships %}{% endblock %}
+
+## Occupation
+{% block occupation %}{% endblock %}
+
+## Skills
+{% block skills %}{% endblock %}
+
+## Speech Style
+{% block speech_style %}{% endblock %}

@@ -1,0 +1,88 @@
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Better Carriage Destinations
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\DefeatAndCapture
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\DismemberingFramework
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Estates of Skyrim
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Estates of Skyrim - Dragons Keep
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\FalkreathShop
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\FloatingSubtitles
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Follower Stats
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Helmet Toggle 2
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\MFO
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\NarrativeEngine
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\PoliticalLetters
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Precision
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ShowPlayerInMenus
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_Brothel
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_MiniGame
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\SkyUI_SE
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\StealthKillDetectionFix
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueDirectionalMovement
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueHUD
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ValhallaCombat
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Better Carriage Destinations\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Better Carriage Destinations\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Better Carriage Destinations\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Filters
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Overrides
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\settings.ini.bak
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Filters\FilterPresets.toml
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Filters\FilterPresets_Default.toml
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Filters\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Overrides\Overrides.toml
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Overrides\Overrides_Default.toml
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\BetterThirdPersonSelection\Overrides\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\DefeatAndCapture\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\DismemberingFramework\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\DismemberingFramework\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Estates of Skyrim\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Estates of Skyrim\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Estates of Skyrim\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Estates of Skyrim - Dragons Keep\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\FalkreathShop\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\FalkreathShop\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\FalkreathShop\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\FloatingSubtitles\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Follower Stats\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Follower Stats\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Follower Stats\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Helmet Toggle 2\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Helmet Toggle 2\keybinds.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Helmet Toggle 2\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Helmet Toggle 2\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\MFO\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\NarrativeEngine\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\NarrativeEngine\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\NarrativeEngine\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\PoliticalLetters\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Precision\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Precision\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\Precision\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ShowPlayerInMenus\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ShowPlayerInMenus\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ShowPlayerInMenus\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_Brothel\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_Brothel\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_Brothel\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_MiniGame\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_MiniGame\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\skyrimnet_MiniGame\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\SkyUI_SE\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\SkyUI_SE\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\SkyUI_SE\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\StealthKillDetectionFix\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\StealthKillDetectionFix\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\StealthKillDetectionFix\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueDirectionalMovement\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueDirectionalMovement\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueDirectionalMovement\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueHUD\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueHUD\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\TrueHUD\__folder_managed_by_vortex
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ValhallaCombat\config.json
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ValhallaCombat\settings.ini
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\MCM\Config\ValhallaCombat\__folder_managed_by_vortex

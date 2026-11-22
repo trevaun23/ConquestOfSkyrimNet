@@ -1,0 +1,2 @@
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\external\adventurersguild.skyrimnet\knowledge\adventurers_guild_lore.sknpack
+C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\external\deadohiosky48.relationships\knowledge\relationships_weddings.sknpack

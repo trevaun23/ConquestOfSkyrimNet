@@ -1,0 +1,16 @@
+{
+  "default-registry": {
+    "kind": "builtin",
+    "baseline": "REPLACE_WITH_BASELINE_MS"
+  },
+  "registries": [
+    {
+      "kind": "git",
+      "repository": "https://gitlab.com/colorglass/vcpkg-colorglass",
+      "baseline": "REPLACE_WITH_BASELINE_CG",
+      "packages": [
+        "commonlibsse-ng"
+      ]
+    }
+  ]
+}

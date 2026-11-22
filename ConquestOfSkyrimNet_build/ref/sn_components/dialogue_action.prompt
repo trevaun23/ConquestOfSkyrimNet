@@ -1,0 +1,60 @@
+{% if feature_enabled("quest_actions") %}
+{# Body for the TriggerDialogueLine action #}
+{% set npc_name = decnpc(npc.UUID).name %}
+{% if embed_actions_in_dialogue %}
+{% if exists("responseTarget") and is_player(responseTarget.UUID) %}
+{% set quest_lines = available_dialogue(npc.UUID, "fires") %}
+{% if default(at_end, false) %}
+{# at_end: dialogue_response renders this among its last lines. The action list, this body included,
+   sits in the cached system message ahead of the whole history; a model that has just heard the player
+   take on a task answered it and left the quest's code behind, so the quest beats are repeated here,
+   beside the reply. Services are left out to keep the end short. #}
+{% if quest_lines.hasQuest %}
+Quest lines you can fire now with `TriggerDialogueLine` (### lines are quest headings, not codes):
+{{ quest_lines.text }}
+When the conversation has just reached one of these, such as {{ player.name }} taking on the task, fire it in this reply: `TriggerDialogueLine` with its bracketed code as form_id.
+{% endif %}
+{% else if quest_lines.hasContent %}
+The exchanges below are actions {{ npc_name }} can trigger right now, each carrying a bracketed 8-character code (0-9, A-F). When the conversation reaches one, set form_id to its code for the game to run. For ordinary conversation, leave form_id unset.
+
+Choosing a line:
+- Fire an exchange's code when it fits the context of the conversation as a whole -- when the beat it represents is where you and {{ player.name }} have actually arrived.
+- Fire only once the decision is settled and you are acting on it -- when {{ player.name }} has agreed to this exact outcome: a task accepted, a deal agreed to, a favor granted, a fight settled. Until that yes, keep talking and hold the code for a later turn.
+- When one branch offers multiple paths (talk it out, pay them off, come to blows), defer to the path {{ player.name }} chooses.
+- Fire at most one code per turn, across every list below. When unsure, keep speaking and save it for a clearer moment.
+{% if quest_lines.hasQuest %}
+
+Quest beats -- choosing one starts or advances that quest (### lines are quest headings; their full context is under "Quests You Could Raise"):
+{{ quest_lines.text }}
+{% endif %}
+{% if quest_lines.hasServices %}
+
+Actions {{ npc_name }} can take -- follower commands, trade, lodging, et cetera (### lines are only headings, never action names; to fire any line here, use TriggerDialogueLine with its code as form_id):
+{{ quest_lines.services }}
+{% endif %}
+{% endif %}
+{% endif %}
+{% else %}
+{% set quest_lines = available_dialogue(npc.UUID, "quest ids") %}
+{% set svc_lines = available_dialogue(npc.UUID, "fires") %}
+{% if quest_lines.hasContent or svc_lines.hasServices %}
+The exchanges below are actions {{ npc_name }} can trigger right now, each carrying a bracketed 8-character code (0-9, A-F). When the conversation reaches one, set form_id to its code for the game to run. For ordinary conversation, leave form_id unset.
+
+Choosing a line:
+- Fire an exchange's code when it fits the context of the conversation as a whole -- when the beat it represents is where you and {{ player.name }} have actually arrived.
+- Fire only once the decision is settled and you are acting on it -- when {{ player.name }} has agreed to this exact outcome: a task accepted, a deal agreed to, a favor granted, a fight settled. Until that yes, keep talking and hold the code for a later turn.
+- When one branch offers multiple paths (talk it out, pay them off, come to blows), defer to the path {{ player.name }} chooses.
+- Fire at most one code per turn, across every list below. When unsure, keep speaking and save it for a clearer moment.
+{% if quest_lines.hasContent %}
+
+Quest exchanges -- choosing one starts or advances that quest (### lines are quest headings):
+{{ quest_lines.text }}
+{% endif %}
+{% if svc_lines.hasServices %}
+
+Actions {{ npc_name }} can take -- follower commands, trade, lodging, et cetera (### lines are only headings, never action names; to fire any line here, use TriggerDialogueLine with its code as form_id):
+{{ svc_lines.services }}
+{% endif %}
+{% endif %}
+{% endif %}
+{% endif %}

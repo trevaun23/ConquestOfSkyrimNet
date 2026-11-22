@@ -1,0 +1,12 @@
+@echo off
+set "HERE=%~dp0"
+set "EXT=C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\SKSE\Plugins\SkyrimNet\external"
+set "OUT=%HERE%ref\ag"
+if exist "%OUT%" rmdir /s /q "%OUT%"
+mkdir "%OUT%"
+copy /y "%EXT%\adventurersguild.skyrimnet\manifest.json" "%OUT%\manifest.json"
+copy /y "%EXT%\adventurersguild.skyrimnet\knowledge\adventurers_guild_lore.sknpack" "%OUT%\lore.sknpack"
+copy /y "%EXT%\adventurersguild.skyrimnet\prompts\submodules\character_bio\0026_guild_rank.prompt" "%OUT%\guild_rank.prompt"
+copy /y "%EXT%\adventurersguild.skyrimnet\actions\AG_JoinAdventurersGuild.yaml" "%OUT%\action.yaml"
+copy /y "%EXT%\deadohiosky48.relationships\knowledge\relationships_weddings.sknpack" "%OUT%\weddings.sknpack"
+dir /b "%EXT%" > "%OUT%\external_list.txt"
