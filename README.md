@@ -1,5 +1,9 @@
 # Conquest of SkyrimNet
- 
+
+Conquest of SkyrimNet is an ambitious mod that allows the player to create their own faction independent of the 
+Stormcloaks and the Empire. The player can choose a government, raise an army, conquer territory and manage their 
+economy with the end goal being to become the High King of Skyrim. DON'T START THIS IN THE MIDDLE OF THE CIVIL WAR
+
 Found your own faction in Skyrim, rule its holds, lead its armies and run its treasury, mostly by **talking to
 people**. Conquest of SkyrimNet builds on Conquest of Skyrim and adds a government you speak to through
 [SkyrimNet](https://github.com/MinLL/SkyrimNet-GamePlugin), along with a PrismaUI faction screen, requests from your
