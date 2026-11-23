@@ -1,0 +1,135 @@
+diff --git a/scripts/Source/SkyBuildNative.psc b/scripts/Source/SkyBuildNative.psc
+index 5105789..5f8039d 100644
+--- a/scripts/Source/SkyBuildNative.psc
++++ b/scripts/Source/SkyBuildNative.psc
+@@ -6,3 +6,19 @@ Bool Function ConfigureWeaponRack(ObjectReference akRack) Global Native
+ 
+ ; Remove runtime visual geometry only. Inventory is never removed here.
+ Function ForgetWeaponRack(ObjectReference akRack) Global Native
++
++; ---- runtime navmesh (for other mods) ----
++; Rebuild the navmesh around the player, as the tool wheel's Navmesh sector does.
++Bool Function RequestNavmesh() Global Native
++; 0 awaiting engine, 1 idle, 2 capturing, 3 building, 4 generated, 5 failed
++Int Function NavmeshStage() Global Native
++Bool Function NavmeshBusy() Global Native
++Float Function NavmeshProgress() Global Native
++String Function NavmeshMessage() Global Native
++; 1 when these functions exist, 2 with TrackObject (0 from an older SkyBuild)
++Int Function NavmeshApiVersion() Global Native
++
++; Another mod's building joins SkyBuild's placed objects so the navmesh cuts around it (version 2).
++Bool Function TrackObject(ObjectReference akRef) Global Native
++Function UntrackObject(ObjectReference akRef) Global Native
++Bool Function IsTracked(ObjectReference akRef) Global Native
+diff --git a/src/main.cpp b/src/main.cpp
+index 1e0e3cc..4aaa244 100644
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -115,6 +115,8 @@ SKSEPluginLoad(const SKSE::LoadInterface *a_skse) {
+     spdlog::critical("Failed to register SkyBuild container functions.");
+     return false;
+   }
++  if (!papyrus->Register(SkyBuild::Navmesh::RegisterPapyrus))
++    spdlog::warn("Failed to register SkyBuild navmesh functions.");
+   if (!SkyBuild::UI::Native::Install())
+     return false;
+   SkyBuild::Navmesh::NativeAuthoredBasis::Initialize();
+diff --git a/src/navmesh/runtime/NavmeshPapyrus.cpp b/src/navmesh/runtime/NavmeshPapyrus.cpp
+new file mode 100644
+index 0000000..d06db15
+--- /dev/null
++++ b/src/navmesh/runtime/NavmeshPapyrus.cpp
+@@ -0,0 +1,80 @@
++// Papyrus access to SkyBuild's runtime navmesh generation, so other mods (Conquest of SkyrimNet's settlements)
++// can ask for the navmesh around the player to be rebuilt and follow its progress.
++#include "navmesh/runtime/RuntimeNavmesh.h"
++#include "building/BuildingManager.h"
++
++namespace SkyBuild::Navmesh {
++namespace {
++// Same as the "Navmesh" sector of SkyBuild's tool wheel: generate around the player.
++bool RequestNavmesh(RE::StaticFunctionTag *) {
++  const auto tasks = SKSE::GetTaskInterface();
++  if (!tasks)
++    return false;
++  tasks->AddTask([] { RequestGeneration(); });
++  return true;
++}
++// 0 awaiting engine, 1 idle, 2 capturing, 3 building, 4 generated, 5 failed
++std::int32_t NavmeshStage(RE::StaticFunctionTag *) {
++  return static_cast<std::int32_t>(GetStatus().stage);
++}
++bool NavmeshBusy(RE::StaticFunctionTag *) {
++  const auto s = GetStatus();
++  return s.generating || s.stage == RuntimeStage::kCapturing ||
++         s.stage == RuntimeStage::kBuilding;
++}
++float NavmeshProgress(RE::StaticFunctionTag *) { return GetStatus().progress; }
++RE::BSFixedString NavmeshMessage(RE::StaticFunctionTag *) {
++  return RE::BSFixedString(GetStatus().message.c_str());
++}
++// Another mod's building joins SkyBuild's placed objects, so navmesh generation cuts around it like SkyBuild's own
++// pieces (as its own building, at its own position and angle). Done on the game thread.
++bool TrackObject(RE::StaticFunctionTag *, RE::TESObjectREFR *ref) {
++  const auto tasks = SKSE::GetTaskInterface();
++  if (!ref || !tasks)
++    return false;
++  const auto handle = ref->GetHandle();
++  tasks->AddTask([handle] {
++    const auto object = handle.get();
++    if (!object || BuildingManager::IsPlacedObject(object->GetFormID()))
++      return;
++    const auto id = BuildingManager::CreateBuildingFromObject(
++        object.get(), BuildingManager::GridObjectType::kBasic);
++    if (id != BuildingManager::INVALID_BUILDING_ID)
++      BuildingManager::AddPlacedObject(object.get(), id);
++  });
++  return true;
++}
++// It leaves them again (before it is taken down); the navmesh forgets it on the next update.
++void UntrackObject(RE::StaticFunctionTag *, RE::TESObjectREFR *ref) {
++  const auto tasks = SKSE::GetTaskInterface();
++  if (!ref || !tasks)
++    return;
++  const auto id = ref->GetFormID();
++  tasks->AddTask([id] {
++    if (BuildingManager::IsPlacedObject(id))
++      BuildingManager::RemovePlacedObject(id);
++  });
++}
++bool IsTracked(RE::StaticFunctionTag *, RE::TESObjectREFR *ref) {
++  return ref && BuildingManager::IsPlacedObject(ref->GetFormID());
++}
++// lets callers tell this build from one without these functions (an unbound native returns 0)
++// 1: navmesh requests; 2: TrackObject / UntrackObject / IsTracked
++std::int32_t NavmeshApiVersion(RE::StaticFunctionTag *) { return 2; }
++} // namespace
++
++bool RegisterPapyrus(RE::BSScript::IVirtualMachine *vm) {
++  if (!vm)
++    return false;
++  vm->RegisterFunction("RequestNavmesh", "SkyBuildNative", RequestNavmesh);
++  vm->RegisterFunction("NavmeshStage", "SkyBuildNative", NavmeshStage);
++  vm->RegisterFunction("NavmeshBusy", "SkyBuildNative", NavmeshBusy);
++  vm->RegisterFunction("NavmeshProgress", "SkyBuildNative", NavmeshProgress);
++  vm->RegisterFunction("NavmeshMessage", "SkyBuildNative", NavmeshMessage);
++  vm->RegisterFunction("NavmeshApiVersion", "SkyBuildNative", NavmeshApiVersion);
++  vm->RegisterFunction("TrackObject", "SkyBuildNative", TrackObject);
++  vm->RegisterFunction("UntrackObject", "SkyBuildNative", UntrackObject);
++  vm->RegisterFunction("IsTracked", "SkyBuildNative", IsTracked);
++  return true;
++}
++} // namespace SkyBuild::Navmesh
+diff --git a/src/navmesh/runtime/RuntimeNavmesh.h b/src/navmesh/runtime/RuntimeNavmesh.h
+index 15bb767..dc95f16 100644
+--- a/src/navmesh/runtime/RuntimeNavmesh.h
++++ b/src/navmesh/runtime/RuntimeNavmesh.h
+@@ -58,5 +58,7 @@ void ConfirmInstalledCache();
+ [[nodiscard]] bool CapturePendingBaseline(void *) noexcept;
+ [[nodiscard]] bool RestoreCommittedNavigation(void *) noexcept;
+ [[nodiscard]] RuntimeStatus GetStatus();
++// Papyrus: SkyBuildNative.RequestNavmesh() and friends (NavmeshPapyrus.cpp)
++bool RegisterPapyrus(RE::BSScript::IVirtualMachine *vm);
+ [[nodiscard]] bool GenerationPresentationActive() noexcept;
+ } // namespace SkyBuild::Navmesh

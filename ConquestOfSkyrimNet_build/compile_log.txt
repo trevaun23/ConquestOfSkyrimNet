@@ -1,14 +1,17 @@
 ROOT=C:\Users\treva\Downloads\Conquest of Skyrim 0.3.9
 FLAGS=C:\Program Files (x86)\The.Elder.Scrolls.V.Skyrim.Special.Edition.v1.6.1170\game\Data\source\Scripts\TESV_Papyrus_Flags.flg
 
-ZIP=ConquestOfSkyrimNet_v1.9.9.zip
+ZIP=ConquestOfSkyrimNet_v2.1.5.zip
+SkyBuild.dll taken from ffbuild\sbp
         1 file(s) moved.
 ConquestOfSkyrimNetUI.dll included
-Starting 21 compile threads for 56 files...
+Starting 21 compile threads for 63 files...
 Compiling "CSNP"...
 Compiling "CSN_Config"...
 Compiling "CSN_Core"...
 Compiling "CSN_Culture"...
+Compiling "CSN_Decrees"...
+Compiling "CSN_Festival"...
 Compiling "CSN_Gov"...
 Compiling "CSN_Intrigue"...
 Compiling "CSN_Journal"...
@@ -18,21 +21,43 @@ Compiling "CSN_Native"...
 Compiling "CSN_Rebellion"...
 Compiling "CSN_Requests"...
 Compiling "CSN_Settle"...
+Compiling "CSN_SettlementBanner"...
 Compiling "CSN_SkyrimNet"...
+Compiling "CSN_Thanes"...
 Compiling "CSN_Troops"...
 Compiling "CSN_War"...
 Compiling "CSN_World"...
-Compiling "cs_attackplanningnewscript"...
-Compiling "cs_changebanners"...
-Compiling "cs_cheatmenuscript"...
-Compiling "cs_checkversion"...
 Starting assembly of CSN_Native
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Starting assembly of CSN_Config
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_attackplanningnewscript"...
+Compilation succeeded.
+Compiling "cs_changebanners"...
+Starting assembly of CSN_SkyrimNet
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_cheatmenuscript"...
+Starting assembly of CSN_Troops
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_checkversion"...
+Starting assembly of CSN_World
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
 Compiling "cs_choosestewardscript"...
-Starting assembly of CSN_Config
+Starting assembly of CSN_Journal
 0 error(s), 0 warning(s)
 Assembly succeeded
 
@@ -44,65 +69,71 @@ Assembly succeeded
 
 Compilation succeeded.
 Compiling "cs_claimareafunctions"...
-Starting assembly of CSN_Troops
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_claimareaquestscript"...
-Starting assembly of cs_attackplanningnewscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_commanderoutfitscript"...
-Starting assembly of CSN_Journal
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_coupscript"...
-Starting assembly of CSNP
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_defendcampscript"...
-Starting assembly of CSN_Requests
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "CS_DefendCityRebelScript"...
 Starting assembly of CSN_Intrigue
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_defendcityscript"...
+Compiling "cs_claimareaquestscript"...
+Starting assembly of CSN_Thanes
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_commandermovingscript"...
+Starting assembly of CSN_Decrees
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_commanderoutfitscript"...
 Starting assembly of CSN_Culture
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_defendfortscript"...
-Starting assembly of CSN_Rebellion
+Compiling "cs_coupscript"...
+Starting assembly of CSN_Festival
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_economymenufunctions"...
+Compiling "cs_defendcampscript"...
+Starting assembly of CSNP
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "CS_DefendCityRebelScript"...
+Starting assembly of CSN_Gov
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_defendcityscript"...
+Starting assembly of CSN_War
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_defendfortscript"...
 Starting assembly of CSN_Core
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_economyvariablefunctions"...
-Starting assembly of cs_cheatmenuscript
+Compiling "cs_economymenufunctions"...
+Starting assembly of CSN_Settle
 0 error(s), 0 warning(s)
 Assembly succeeded
 
-Starting assembly of CSN_Settle
+Compilation succeeded.
+Compiling "cs_economyvariablefunctions"...
+Starting assembly of CSN_MCM
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Starting assembly of CSN_Rebellion
 0 error(s), 0 warning(s)
 Assembly succeeded
 
@@ -110,133 +141,160 @@ Compilation succeeded.
 Compiling "cs_govscriptfunctions"...
 Compilation succeeded.
 Compiling "cs_holdbordersscript"...
-Starting assembly of CSN_World
+Starting assembly of CSN_Requests
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
 Compiling "cs_holdingeconomyupdaterscript"...
-Starting assembly of CSN_SkyrimNet
+Starting assembly of CSN_SettlementBanner
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
 Compiling "cs_intelreportscript"...
-Starting assembly of cs_checkversion
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_lawmenuscript"...
-Starting assembly of CSN_MCM
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_loyaltycheckscript"...
-Starting assembly of CSN_War
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_mapmanagemenuscript"...
-Starting assembly of CSN_Gov
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_patrolholdscript"...
 Starting assembly of cs_changebanners
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_playerprisonscript"...
-Starting assembly of cs_choosestewardscript
+Compiling "cs_lawmenuscript"...
+Starting assembly of cs_attackplanningnewscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_prisonerquestscript"...
-Starting assembly of cs_choosetroopracesscript
+Compiling "cs_loyaltycheckscript"...
+Starting assembly of cs_cheatmenuscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_recruitjarl"...
-Starting assembly of cs_claimareafunctions
+Compiling "cs_mapmanagemenuscript"...
+Starting assembly of cs_checkversion
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_researchmenuscript"...
-Starting assembly of CS_DefendCityRebelScript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_selectname"...
+Compiling "cs_patrolholdscript"...
 Starting assembly of cs_coupscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_settingsmenuscript"...
-Starting assembly of cs_commanderoutfitscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_startfactionmenu"...
-Starting assembly of cs_claimareaquestscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_tmscript"...
-Starting assembly of cs_defendcampscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_transferownershipscript"...
-Starting assembly of cs_defendfortscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Compiling "cs_troopmanagemenuscript"...
+Compiling "cs_playerprisonscript"...
 Starting assembly of cs_defendcityscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_troopupgradescript"...
+Compiling "cs_prisonerquestscript"...
+Starting assembly of cs_choosestewardscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_recruitjarl"...
+Starting assembly of cs_claimareaquestscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_refreshtrooprespawn"...
+Starting assembly of cs_defendcampscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_researchmenuscript"...
+Starting assembly of cs_choosetroopracesscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_selectname"...
 Starting assembly of cs_economymenufunctions
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Compiling "cs_upgrademenufunctions"...
+Compiling "cs_settingsmenuscript"...
+Starting assembly of cs_commandermovingscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_startfactionmenu"...
+Starting assembly of cs_claimareafunctions
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_tmscript"...
+Starting assembly of CS_DefendCityRebelScript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_transferownershipscript"...
+Starting assembly of cs_commanderoutfitscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_troopmanagemenuscript"...
+Starting assembly of cs_lawmenuscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "cs_troopupgradescript"...
 Starting assembly of cs_govscriptfunctions
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
+Compiling "cs_upgrademenufunctions"...
+Starting assembly of cs_defendfortscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
 Compiling "cs_upgradetroopsmenu"...
-Starting assembly of cs_intelreportscript
+Starting assembly of cs_holdingeconomyupdaterscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
 Compiling "CS_WarRebelsScript"...
-Starting assembly of cs_loyaltycheckscript
+Starting assembly of cs_economyvariablefunctions
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
 Compiling "sf_cs_arrestscenewhiterun_020316eb"...
-Starting assembly of cs_holdingeconomyupdaterscript
+Starting assembly of cs_intelreportscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Compiling "SkyBuildNative"...
+Starting assembly of cs_holdbordersscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Starting assembly of SkyBuildNative
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Starting assembly of cs_loyaltycheckscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Starting assembly of cs_mapmanagemenuscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
@@ -251,37 +309,7 @@ Starting assembly of cs_playerprisonscript
 Assembly succeeded
 
 Compilation succeeded.
-Starting assembly of cs_mapmanagemenuscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Starting assembly of cs_lawmenuscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Starting assembly of cs_holdbordersscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Starting assembly of cs_economyvariablefunctions
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Starting assembly of cs_recruitjarl
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
 Starting assembly of cs_prisonerquestscript
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
-Starting assembly of cs_researchmenuscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
@@ -291,7 +319,12 @@ Starting assembly of cs_selectname
 Assembly succeeded
 
 Compilation succeeded.
-Starting assembly of cs_startfactionmenu
+Starting assembly of cs_recruitjarl
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Starting assembly of cs_researchmenuscript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
@@ -301,27 +334,37 @@ Starting assembly of cs_settingsmenuscript
 Assembly succeeded
 
 Compilation succeeded.
-Starting assembly of cs_transferownershipscript
+Starting assembly of cs_refreshtrooprespawn
 0 error(s), 0 warning(s)
 Assembly succeeded
 
-Starting assembly of cs_upgrademenufunctions
-0 error(s), 0 warning(s)
-Assembly succeeded
-
-Compilation succeeded.
 Compilation succeeded.
 Starting assembly of cs_troopupgradescript
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
-Starting assembly of sf_cs_arrestscenewhiterun_020316eb
+Starting assembly of cs_startfactionmenu
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Starting assembly of cs_upgrademenufunctions
 0 error(s), 0 warning(s)
 Assembly succeeded
 
 Compilation succeeded.
 Starting assembly of CS_WarRebelsScript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Starting assembly of cs_transferownershipscript
+0 error(s), 0 warning(s)
+Assembly succeeded
+
+Compilation succeeded.
+Starting assembly of sf_cs_arrestscenewhiterun_020316eb
 0 error(s), 0 warning(s)
 Assembly succeeded
 
@@ -342,8 +385,12 @@ Assembly succeeded
 
 Compilation succeeded.
 
-Batch compile of 56 files finished. 56 succeeded, 0 failed.
+Batch compile of 63 files finished. 63 succeeded, 0 failed.
 
 
+2026/11/23 13:48:20 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\treva\ffbuild\csnmod\SKSE\Plugins\SkyrimNet\external\conquestofskyrimnet.skyrimnet\
+The system cannot find the file specified.
+
+SkyBuild navmesh option included
 
 === done ===

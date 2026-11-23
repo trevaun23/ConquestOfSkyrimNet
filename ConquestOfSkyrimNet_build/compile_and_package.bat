@@ -42,6 +42,12 @@ set "VER="
 for /f "usebackq delims=" %%v in (`powershell -NoProfile -Command "try { ([xml](Get-Content -LiteralPath '%STAGE%\_fomod\info.xml')).fomod.Version } catch { '' }"`) do set "VER=%%v"
 if defined VER ( set "ZIPNAME=ConquestOfSkyrimNet_v!VER!.zip" ) else ( echo NOTE: no version in fomod\info.xml - using ConquestOfSkyrimNet_Full.zip )
 echo ZIP=!ZIPNAME!
+rem the patched SkyBuild.dll you built last (Build_SkyBuild_Patched) wins over the one in CSN_Dev.zip
+if exist "%USERPROFILE%\ffbuild\sbp\SkyBuild.dll" (
+  if not exist "%STAGE%\_skybuild\SKSE\Plugins" mkdir "%STAGE%\_skybuild\SKSE\Plugins"
+  copy /y "%USERPROFILE%\ffbuild\sbp\SkyBuild.dll" "%STAGE%\_skybuild\SKSE\Plugins\SkyBuild.dll" >nul
+  echo SkyBuild.dll taken from ffbuild\sbp
+)
 if exist "%STAGE%\SEQ\conquerskyrim.seq" move /y "%STAGE%\SEQ\conquerskyrim.seq" "%STAGE%\SEQ\ConquestOfSkyrimNet.seq"
 if exist "%HERE%ui\ConquestOfSkyrimNetUI_DLL.zip" (
   powershell -NoProfile -Command "Expand-Archive -Force -LiteralPath '%HERE%ui\ConquestOfSkyrimNetUI_DLL.zip' -DestinationPath '%STAGE%'"
@@ -57,13 +63,19 @@ type "%USERPROFILE%\ffbuild\papyrus.txt"
 findstr /c:"compilation failed" "%USERPROFILE%\ffbuild\papyrus.txt" >nul && ( echo [3] Papyrus compile errors - see above & exit /b 3 )
 rmdir /s /q "%STAGE%\Source"
 
-rem ---- 4. FOMOD layout: fomod\, 00 Core\ (always), 10 SkyrimNet Context\ (optional) ----
+rem ---- 4. FOMOD layout: fomod\, 00 Core\ (always), 10 SkyrimNet Context\ and 20 SkyBuild Navmesh\ (optional) ----
 set "PKG=%USERPROFILE%\ffbuild\csnpkg"
 if exist "%PKG%" rmdir /s /q "%PKG%"
 mkdir "%PKG%\fomod"
 mkdir "%PKG%\10 SkyrimNet Context\SKSE\Plugins\SkyrimNet\external\conquestofskyrimnet.skyrimnet"
 robocopy "%STAGE%\_fomod" "%PKG%\fomod" /E /MOVE /NFL /NDL /NJH /NJS
 robocopy "%STAGE%\SKSE\Plugins\SkyrimNet\external\conquestofskyrimnet.skyrimnet" "%PKG%\10 SkyrimNet Context\SKSE\Plugins\SkyrimNet\external\conquestofskyrimnet.skyrimnet" /E /MOVE /NFL /NDL /NJH /NJS
+if exist "%STAGE%\_skybuild" (
+  mkdir "%PKG%\20 SkyBuild Navmesh"
+  robocopy "%STAGE%\_skybuild" "%PKG%\20 SkyBuild Navmesh" /E /MOVE /NFL /NDL /NJH /NJS
+  if exist "%STAGE%\_skybuild" rmdir /s /q "%STAGE%\_skybuild"
+  echo SkyBuild navmesh option included
+)
 robocopy "%STAGE%" "%PKG%\00 Core" /E /MOVE /NFL /NDL /NJH /NJS
 if errorlevel 8 ( echo [4] FOMOD layout failed & exit /b 4 )
 if not exist "%PKG%\fomod\ModuleConfig.xml" ( echo [4] fomod files missing & exit /b 4 )

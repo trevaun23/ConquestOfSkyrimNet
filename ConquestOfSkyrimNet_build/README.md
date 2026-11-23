@@ -24,6 +24,8 @@ people, unrest and uprisings, army morale, deserters, bribery and coups, and set
 |---|---|---|
 | **SkyrimNet** (strongly recommended) | [GitHub](https://github.com/MinLL/SkyrimNet-GamePlugin) | Conversation, knowledge and memories. This guide assumes you have it. |
 | **Physical Letters** | [GitHub](https://github.com/zevck/Physical-Letters) | Requests reach you as letters by courier. |
+| **Holidays** | [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/1533) | Festivals in your towns: an optional quest to attend, and a little loyalty when you do. |
+| **SkyBuild** | [GitHub](https://github.com/Sokco/SkyBuild) | Only for the Settlements tab's **Update navmesh** button. Tick the installer's SkyBuild option (offered only when SkyBuild is installed) and load Conquest of SkyrimNet after SkyBuild. Everything else works without it. |
 | **SeverActions** (recommended) | [GitHub](https://github.com/Severause/SeverActions) | More SkyrimNet actions, so NPCs can follow you, travel, craft, change outfits, make arrests and fight. It pairs well with the faction's officers and soldiers. |
 
 Conquest of SkyrimNet **replaces** Conquest of Skyrim (`conquerskyrim.esp`), so remove that first.
@@ -32,6 +34,8 @@ Conquest of SkyrimNet **replaces** Conquest of Skyrim (`conquerskyrim.esp`), so 
 
 1. Install `ConquestOfSkyrimNet_v<version>.zip` with your mod manager and enable `ConquestOfSkyrimNet.esp`.
 2. In the installer, keep **SkyrimNet knowledge** ticked if you use SkyrimNet.
+   If you use SkyBuild, tick **SkyBuild: Update navmesh button** too (it only appears when SkyBuild is installed), and
+   set Conquest of SkyrimNet to load after SkyBuild.
 3. Start a new game, or continue a save made with an earlier version of Conquest of SkyrimNet.
 4. Read the **Start my Faction** book to pick your faction's name, army prefix and banner.
 5. Go to MCM > Conquest of SkyrimNet > General and bind **Faction menu**. It's unbound by default.
@@ -44,6 +48,56 @@ Conquest of SkyrimNet **replaces** Conquest of Skyrim (`conquerskyrim.esp`), so 
 4. **Appoint a General**, and a **Captain** for your first army.
 5. **Open the faction screen** with your hotkey. It shows your treasury, supplies, lands, armies and requests.
 6. From then on, run the realm by talking to the people who serve you.
+
+## Core features
+
+**Conquer Skyrim.** Start with a single bandit camp and end up ruling Skyrim. Take any of 87 claims, then forts,
+roads and whole holds, and storm cities against the Imperials and the Stormcloaks. Plan sieges at the war camp,
+bring rams, ladders and catapults, and give the order to attack. If you'd rather pay than fight, a jarl at peace
+with you may sell you their city or fort.
+
+**Build your own settlements.** Plant a banner on open land and build a village from Skyrim and Hearthfire pieces:
+homes, fields, mills, smithies, an inn, walls and watchtowers. Settlers move in, take the jobs, and send food, wood,
+metal and gold home. Each settlement gets its own map marker for fast travel. Strong walls keep raiders out.
+
+**Rule through conversation.** Appoint a Steward, a General, a Blacksmith, captains and jarls from the people you
+meet, then give them orders out loud. "Lower the taxes in Riverwood." "Send Army 2 to attack Fort Greymoor."
+"Recruit ten archers." With SkyrimNet, they know the real numbers, remember what you did, and talk back.
+
+**Command armies that have feelings.** Every army has morale. Unpaid wages, empty bellies, long campaigns and
+refused requests wear it down. Stars, victories and listening to your commanders lift it back up. Push an army too
+far and it **deserts**: it becomes a free company that holds your fort, raids your stores and tempts other armies to
+join it. You can crush them, pay them off or recognise their realm.
+
+**Keep your people loyal, or face uprisings.** Hunger, heavy taxes, no garrison and ignored court cases make towns
+restless. Unrest turns into an **uprising**: armed townsfolk take the town, stop paying taxes, and eventually open
+the gates to your enemies. You can meet their demands, kill their leader or march in a garrison. Each choice has a
+cost.
+
+**Rebels fight back.** Risen towns and free companies take their own turn in the war. Every day, when the economy
+updates, they may storm one of your cities in a full Conquest of Skyrim battle. You can defend it yourself or trust
+your garrison.
+
+**Topple jarls from within.** In enemy cities, bribe the guards, fund the nobles and win over the citizens, either
+in person or through your Steward's agents. When support is high enough, launch a **coup**. Torch-bearing crowds
+gather, you confront the jarl, and the guards decide whose side they're on.
+
+**Hear from your people.** Towns, officers, commanders and Thanes send you requests (Thanes pitch private
+ventures that pay you back with profit): festivals, tax relief, trade, upgrades,
+or a famous army to guard their walls. With Physical Letters they arrive by courier. Your answers change loyalty
+and morale.
+
+**Run an economy.** Gold, food, metal and wood come from your towns, mines, farms and settlements. Set taxes,
+trade with your towns and rival factions, upgrade barracks, farms, mills and mines, and buy supplies straight from
+farmers, miners and lumberjacks.
+
+**Shape your faction.** Choose your faction's name, banner, uniforms, troop mix and your own title (Supreme
+Leader, High Priest, or anything you like). Write its culture and military
+doctrine, and pick how it's led: laissez-faire, democratic or an iron-fisted dictatorship. Everyone in Skyrim
+learns who you are.
+
+**Follow it all in your journal.** Unrest, uprisings, deserters and coups each get a quest with stages and map
+markers. The faction screen shows everything else at a glance.
 
 ---
 
@@ -60,7 +114,10 @@ Who you talk to matters: each office can do certain things.
 | Make them your **Steward** | "I need a Steward to keep my treasury and trade. Will you take the post?" |
 | Make them your **Blacksmith** | "Will you be my faction's Blacksmith and see to the troops' gear?" |
 | Make them your **Court Wizard** | "I'd like you to serve as my Court Wizard." |
-| Make them **Jarl / leader / steward / housecarl** of a town you rule | "Whiterun needs a jarl. Will you rule it for me?" · "Be Riverwood's leader." |
+| Make them **Jarl** of a city or **leader** of a village you rule | "Whiterun needs a jarl. Will you rule it for me?" · "Be Riverwood's leader." |
+| Make them **steward of a hold** (one town, not your faction's Steward) | "Will you be the steward of the Rift?" · "Run Riften's affairs as its steward." |
+| Make them **housecarl of a hold** | "Will you be housecarl of Whiterun hold and guard its jarl?" |
+| Make them a **Thane** (1,000 gold) | "I name you Thane of Whiterun." |
 | Make them **Captain** of an army | "Will you lead one of my armies as Captain?" |
 | **Dismiss** someone | "You're relieved of your post." |
 | Have them **change clothes** (officers) | "Wear something different." · "Wear outfit template 2." |
@@ -82,7 +139,7 @@ Anyone holding an office may also ask to step down. You can accept or refuse.
 | Declare war | "Prepare a declaration of war against the Imperials." |
 | Bribe an enemy city's guards (paid from the treasury) | "Have our agents bribe the guards of Solitude." |
 | Fund an enemy city's nobles | "Fund the nobles of Markarth." |
-| Start a coup | "Set the coup in Whiterun in motion." |
+| Start a coup | "Tell your agents to plan the coup on Riften." |
 | Found a settlement where you stand | "Let's found a settlement here." |
 | Build in a settlement | "I want to build something here." |
 | Calm a town in unrest | "Tell Riverwood we'll meet their demands." |
@@ -103,10 +160,12 @@ Steward can do them for any town.
 | Recruit troops | "Recruit 5 archers and 10 soldiers for Army 5." |
 | Write a troop template | "Put 10 soldiers, 7 archers and 2 crossbowmen in template 1." |
 | Apply a template | "Apply template 1 to Army 3." |
-| Award a star (10,000 gold) | "Give Captain Aerina a star for her service." |
+| Award a star (10,000 gold, 100 food) | "Give Captain Aerina a star for her service." |
 | Remove a commander | "Remove Captain Hrolf from command." |
 | Name an army | "Name Army 2 the Iron Wolves, sworn to free the Reach." |
 | Put down deserters | "Send the Iron Wolves against the deserters at Fort Sungard." |
+| Plan a coup through your agents | "Tell your agents to plan the coup on Riften." |
+| Put down an uprising | "Send Army 2 to crush the rising in Shor's Stone." |
 | Found or build a settlement | "Found a settlement here." · "Open the build menu." |
 
 ### Captains and Commanders (your own army)
@@ -125,6 +184,7 @@ Steward can do them for any town.
 | Award a star | "I'm awarding you a star." |
 | Check morale | "How are the troops holding up?" |
 | Fight deserters | "Take your army and crush those deserters." |
+| Put down an uprising | "Take your army and deal with the rebels in Riften." |
 
 Captains and Commanders know their army's morale and what's behind it, so ask them.
 
@@ -140,8 +200,13 @@ Captains and Commanders know their army's morale and what's behind it, so ask th
 
 ### Jarls and leaders of *other* sides (while at peace)
 
+Each seller names their own price (at least 500,000 gold for a hold, 80,000 for a fort, often with food, metal
+and wood on top) and sticks to it unless something changes their mind. A jarl may even hand it over for free:
+under duress, to repay a great favour, or as part of a partnership. That's entirely their call.
+
 | You want to… | Say something like… |
 |---|---|
+| Ask their price | "What's your price for Falkreath?" (they name it and remember it) |
 | Buy their city | "What would it take for Falkreath to join my faction? I can pay." |
 | Buy their hold's fort | "Sell me Fort Neugrad. Gold, food, whatever you need." |
 | Buy a fort from Tullius or Ulfric | "General Tullius, I'll buy Fort Hraggstad from the Legion." |

@@ -1,4 +1,4 @@
-=== Sat 11/21/2026 18:58:09.32 ===
+=== Mon 11/23/2026 13:43:19.29 ===
 SRC=C:\Users\treva\Downloads\Conquest of Skyrim 0.3.9\ConquestOfSkyrimNet_build\ui\
 WORK=C:\Users\treva\ffbuild
 VSPATH=C:\Program Files\Microsoft Visual Studio\18\Community
